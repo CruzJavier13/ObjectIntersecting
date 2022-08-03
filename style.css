@@ -1,0 +1,162 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.menu{
+    display: grid;
+    background-color: #222;
+    grid-template-columns: repeat(2,1fr);
+    position: sticky;
+    top: 0;
+    grid-template-areas: "ico menu";
+    z-index: 10;
+}
+.menu__ico{
+    position: absolute;
+    border-radius: 50%;
+    background-color: #000;
+    grid-area: ico;
+    border: 5px solid #488a;
+    margin: 5px auto;
+    margin-left: 60px;
+
+}
+.menu__ico-i img{
+    width: 32px;
+    height: 32px;
+    filter: invert(100%);
+}
+.menu__ul{
+    grid-area: menu;
+
+}
+.menu__ul-li{
+    display: flex;
+    justify-content:flex-end;
+}
+.menu__ul-li li{
+    padding: 5px;
+    margin: 5px;
+    margin-right: 40px;
+    list-style: none;
+}
+.menu__ul-li li a{
+    font-size: 20px;
+    text-decoration: none;
+    color: #fff;
+    line-height: 1.8;
+}
+
+.home{
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    background-color: #222;
+}
+.img{
+    background-image: url('https://wallpapercave.com/wp/wp2231603.jpg');
+    background-repeat: no-repeat;
+    object-fit: fill;
+    background-position: center center;
+    height: 60vh;
+    width: 80vw;
+    margin: auto;
+    background-color: #222;
+    opacity: .9;
+    height: 60vh;
+    border: 3px solid #48e;
+}
+.img h3{
+    color: #fff;
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 4em;
+}
+.img p{
+    color: #fff;
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    text-align: center;
+
+}
+.home__galery{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-top: 20px;
+    height: 30vh;
+}
+.home__galery img{
+    width: 30vw;
+    height: 20vh;
+    margin: auto;
+    box-shadow: 0 0 2px 2px #000;
+    padding: 5px;
+}
+.contact{
+    background-color: #222;
+    padding: 50px;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+.contact__form{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 60vw;
+    padding: 20px;
+    background-color: #fff;
+    justify-content: center;
+}
+
+.contact__form textarea{
+    resize: none;
+    margin: 0 20px;
+}
+.contact__form input{
+    margin: 20px;
+    padding: 6px 10px;
+}
+.about{
+    display: flex;
+    flex-direction: column;
+}
+.container{
+    display: flex;
+    
+    flex-direction: row;
+    flex-wrap: wrap ;
+    overflow-y: auto;
+}
+.publication{
+    flex-grow: 1;
+    background-color: aqua;
+    border: 3px solid #000;
+    flex-basis: 32vw;
+}
+.publication h1{
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+}
+.publication p{
+    text-align: justify;
+    padding: 5px;
+    line-height: 1.5;
+}
+.copy{
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
+.hover{
+    position: absolute;
+    background-color: #bbb;
+    height: 1px;
+    width: 50px;
+    content: '';
+}
