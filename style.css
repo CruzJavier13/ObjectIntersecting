@@ -130,6 +130,7 @@
     
     flex-direction: row;
     flex-wrap: wrap ;
+    max-height: 60vh;
     overflow-y: auto;
 }
 .publication{
